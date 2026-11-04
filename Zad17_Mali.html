@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head>
+
+	<meta charset="utf-8">
+
+	<script language="JavaScript">
+
+		function okno_zamknij()
+		{
+			window.close()
+		}
+	</script>
+
+	<title>Zadanie17_Teoria</title>
+
+ </head>
+	  <body>
+	  <OL TYPE=1 START=1>
+
+		<li><h2>Wymień cztery sposoby wyprowadzania danych w JS</h2></li><br>
+		<p>1) <b>document.write()</b> – wypisuje tekst lub kod HTML bezpośrednio na stronie.<br><br>
+		2) <b>alert()</b> – wyświetla dane w okienku dialogowym.<br><br>
+		3) <b>do okienek formularza</b> – wartość zapisujemy we właściwości value elementu input, np.
+		document.getElementById("wynik").value = 5;<br><br>
+		4) <b>do tabeli</b> – dane wstawiamy do komórki tabeli, np. za pomocą właściwości innerHTML.</p><br>
+
+		<li><h2>Czym jest funkcja w JS. Omów 4 podpunkty</h2></li><br>
+		<p>1) Funkcja to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy.<br><br>
+		2) Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod.<br><br>
+		3) Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane, np. suma_kry(a, b).<br><br>
+		4) Funkcja może (nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b>return</b>.</p><br>
+
+		<li><h2>Omów metody getElementsByName, getElementById, getElementsByTagName (może być w postaci tabeli)</h2></li><br>
+		<table border="1" cellpadding="6" cellspacing="0">
+			<tr>
+				<th>Metoda</th>
+				<th>Opis</th>
+			</tr>
+			<tr>
+				<td>getElementById("id")</td>
+				<td>dostęp do jednego elementu o konkretnej wartości atrybutu id</td>
+			</tr>
+			<tr>
+				<td>getElementsByTagName("znacznik")</td>
+				<td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+			</tr>
+			<tr>
+				<td>getElementsByName("nazwa")</td>
+				<td>dostęp do wszystkich elementów o konkretnej wartości atrybutu name</td>
+			</tr>
+		</table><br>
+
+		<li><h2>Omów właściwości innerHTML, innerText, className (każdą osobno)</h2></li><br>
+		<p>1) <b>innerHTML</b> – właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie albo usunięcie kodu HTML z danego elementu HTML, np. w tabeli.<br><br>
+		2) <b>innerText</b> – umożliwia określenie ciągu znaków, który zostanie umieszczony w elemencie (sam tekst, bez znaczników HTML).<br><br>
+		3) <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.</p><br>
+
+		</OL>
+
+   		<form>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+    	</form>
+    </body>
+</html>
